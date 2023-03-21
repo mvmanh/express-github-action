@@ -7,7 +7,10 @@ const app = express();
 
 app.use(express.json());
 
-app.get("/", (req, res) => res.send("Welcome to our RESTful web service"));
+app.get("/", (req, res) => res.json({
+  code: 0,
+  message: "Welcome to our RESTful web service"
+}));
 
 app.use((req, res) =>
   res.json({ code: 1, message: "Your request path or method is not supported" })
