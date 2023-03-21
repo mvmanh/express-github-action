@@ -9,7 +9,7 @@ app.use(express.json());
 
 app.get("/", (req, res) => res.json({
   code: 0,
-  message: "Welcome to our RESTful web service"
+  message: "Welcome to our RESTful web service, v2"
 }));
 
 app.use((req, res) =>
