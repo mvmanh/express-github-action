@@ -17,6 +17,11 @@ app.get("/contact", (req, res) => res.json({
   message: "+84.822.101.123"
 }));
 
+app.get("/about", (req, res) => res.json({
+  code: 0,
+  message: "Hello"
+}));
+
 app.use((req, res) =>
   res.json({ code: 1, message: "Your request path or method is not supported" })
 );
