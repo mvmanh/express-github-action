@@ -9,7 +9,12 @@ app.use(express.json());
 
 app.get("/", (req, res) => res.json({
   code: 0,
-  message: "Welcome to our RESTful web service, v2.1"
+  message: "Welcome to our RESTful web service, v2.2"
+}));
+
+app.get("/contact", (req, res) => res.json({
+  code: 0,
+  message: "+84.822.101.123"
 }));
 
 app.use((req, res) =>
